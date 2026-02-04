@@ -6,6 +6,8 @@ the server applies a transform (rotate/flip/scale) and returns the result as a P
 # Features
 - Uses low-level linux and libc library calls to instantiate and communicate over TCP sockets and ports, to parse arguments, to handle multithreading and to read image data.
 - Uses TCP, IPv4 and HTTP style requests as well as low-level sockets and ports for client/server communication.
+- Supports image rotation, scale and flipping.
+- Provides detailed error handling, including image and networking errors.
 - Server is multi-threaded and allows for mutliple simultaneously connected clients. Multithreading uses libc semaphores, mutexes and flags to safely synchronize resources.
 - Includes a custom command line argument parser in the client implementation.
 - Prints an operating snapshot of connected clients and completed/in-progress image operations on the server recieving "SIGHUP".
